@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/menu/menu.css">
+</head>
+<body>
+<div class="mainContainer">
+<div id="navMenu">
+        <ul class="menu-bar">
+            <li class="menu-item-parent" ng-repeat="p in parentMenu" ng-mouseenter="showChildMenu(p.parentId)" ng-mouseleave="hideChildMenu(p.parentId)">
+              <p class="parent-menu-text">{{p.name}}</p>
+              <ul class="menu-bar-internal" ng-if="p.showChildList">
+                  <li class="menu-mouse-over menu-hover menu-item-child" ng-repeat="c in p.childList">{{c.name}}</li>
+              </ul>
+            </li>
+        </ul>
+</div>
+<section class="section-main">
+  <div id="leftSection" class="left-panel">
+    <img src="/images/loadingArrows.gif" id="loadingBar" height="75" width="75" ng-show="showLoadingBar"/>
+  </div>
+  <div class="menu-body">
+       <button ng-click="clearTextArea()" class="menu-buttons clear-area-button">Clear Panel</button>
+       <img src="/images/loadingArrows.gif" id="loadingBar" height="75" width="75" ng-show="showLoadingBar"/>
+       <div>
+         <img src="/images/lightning.gif" style="margin-left: 50px;" height="400" width="600" ng-show="showSwordEffect"/>
+       </div>
+   </div>
+</section>
+</div>
+
+</body>
+</html>

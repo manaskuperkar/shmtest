@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+</head>
+<body class="app-main-body">
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <header>
+      <div id="topSection" class="pageHeader">
+        <span style="float:right; margin-right:9px;cursor:pointer;" ng-show="showLogOutButton" ng-click="logout()">
+          <img src="/images/logout.png" width="50px;" height="50px;"/>
+          <div style="color:white; font-weight:bold;">Logout</div>
+        </span>
+        <p class="api-title">Super Heroes</p>
+  </div>
+  </header>
+  <div ng-view>
+
+  </div>
+  <div class="index-footer">
+        <p class="footer-text">superheroes.com</p>
+        <p class="footer-text">Property of EuroTruck and Fifa</p>
+        <p class="footer-text" style="margin-bottom:0;">Contact- 555-666-7789.</p>
+        <div class="footer-text" style="margin-top:0;">
+            <img src="/images/footer-symbol.gif" class="footer-symbol"/>
+        </div>
+  </div>
+
+ <!-- <div ng-show="!hideDefaultStuff">Angular seed app: v<span app-version></span></div>-->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="home/HomePageController.js"></script>
+  <script src="menu/menuController.js"></script>
+  <script src="login/loginController.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <script src="common/goToLogin.js"></script>
+</body>
+</html>

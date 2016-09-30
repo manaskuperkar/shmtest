@@ -1,0 +1,115 @@
+.login-div-box{
+  height: 250px;
+  margin-left: 30%;
+  margin-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  background-color: #8c8c8c;
+  box-shadow: 6px 6px 6px black;
+  width: 30%;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding-bottom: 1%;
+  overflow: hidden;
+}
+
+.login-table{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.login-title-text{
+  font-size: 135%;
+  font-weight: bold;
+}
+
+.login-form{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.login-button{
+    color: black;
+    font-family: verdana;
+    background-color: #bfbfbf;
+    width: 20%;
+    height:10%;
+    box-shadow: 1px 1px 1px #4d4d4d;
+    cursor: pointer;
+    border: none;
+    padding: 1%;
+}
+
+button.login-button:hover, input.login-input:hover{
+  box-shadow: 2px 2px 2px black;
+}
+
+.login-input{
+  background-color: #bfbfbf !important;
+  border: none;
+  color: black;
+  text-shadow: 2px 2px 6px white;
+  width: 90%;
+}
+
+.left-login-div{
+  width: 30%;
+  height: 72%;
+  margin-right: 0px;
+  position: absolute;
+  z-index: -2;
+}
+
+.login-section-main{
+  height: 700px;
+  padding: 2px;
+  background-image: url('/images/deathnote-1.jpg');
+  background-size: contain;
+  position: relative;
+}
+
+.right-login-div{
+  float: right;
+  width: 29%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.right-login-image{
+  width: 100%;
+  z-index: 5;
+  overflow: visible;
+}
+
+
+td{
+  padding: 5px;
+}
+
+.login-items{
+  margin-top: 2%;
+}
+
+.login-tooltip{
+  background-color: grey;
+  padding: 1px;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px black
+}
+
+.tool-tip-text{
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  background-color: grey;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.login-error{
+  color: red;
+}

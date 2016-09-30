@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/login/login.css">
+    <link rel="stylesheet" href="/menu/menu.css">
+</head>
+<body>
+<section class="login-section-main">
+  <div class="left-login-div">
+  </div>
+    <div class="login-div-box">
+      <p class="login-title-text">Enter Your Super Hero Credentials</p>
+      <form class="login-form">
+        <table class="login-table">
+            <tr>
+              <td style="font-weight:bold;width=20%;">Hero ID</td>
+              <td>
+                <span>: </span>
+                <input type="text" ng-model="superUserName" class="login-input" ng-change="loginInputChanged()"/>
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold;width=20%;">Password</td>
+              <td>
+                <span>: </span>
+                <input type="password" ng-model="superPassword" class="login-input" ng-change="loginInputChanged()"/>
+              </td>
+            </tr>
+        </table>
+        <button type="submit" class="login-items login-button" ng-click="validateLogin()">Login</button>
+        <div class="login-items"><a href="" ng-click="forgotPassword()" ng-mouseleave="hideToolTipMessage()" style="text-shadow: none;">forgot password?</a></div>
+        <md-tooltip class="login-items login-tooltip" ng-show="showToolTip">
+          <span class="tool-tip-text">Dont expect reset password bullshit!!</span>
+        </md-tooltip>
+        <div class="login-error" ng-show="validationError">The Password is incorrect. Are you losing your Super Power???????</div>
+      </form>
+    </div>
+    <div class="right-login-div">
+        <img src="/images/Kirito-2.png" class="right-login-image"/>
+    </div>
+</section>
+
+
+</body>
+</html>

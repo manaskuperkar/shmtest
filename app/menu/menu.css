@@ -1,0 +1,149 @@
+div.mainContainer{
+    width:100%;
+    height:80%;
+    border: 1px solid black;
+    padding-top: 0px;
+}
+
+header{
+    border: 1px solid black;
+    background-color: black;
+}
+
+.menu-mouse-over{
+    cursor: pointer;
+}
+
+.menu-bar{
+    list-style-type: none;
+    width:75%;
+    margin-top: 0;
+    margin-left: 12%;
+    height: 99%;
+    border: none;
+    background-color: #696969;
+    -webkit-padding-start:0px;
+    border-radius: 4%;
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+
+.clear-area-button{
+  float: right;
+}
+
+.menu-item-parent{
+    text-align: center;
+    float: left;
+    border:none;
+    width: 9.70%;
+    height: 100%;
+    text-shadow: 1px 1px 1px black;
+    color: white
+}
+
+li.menu-item-parent:hover, li.menu-item-child:hover{
+  background-color: 		#000000;
+}
+
+li.menu-item-parent:last-child{
+  border-right: none;
+}
+
+.fleet-view-table{
+  height: 100%;
+
+}
+
+.parent-menu-text{
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 66%;
+  font-family: lucida console;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.fleet-view-table td{
+    border: 1px solid black;
+    padding: 1px;
+    text-align: center;
+}
+
+.fleet-view-table thead{
+    background-color: #696969;
+}
+
+.menu-item-child{
+    text-align: center;
+    margin: 1%;
+    border-bottom: 0.2px solid black;
+}
+
+
+.menu-bar-internal{
+    list-style-type: none;
+    float: left;
+    margin-left: 0;
+    padding: 2px;
+    z-index: -1;
+    width: 100%;
+    background-color: black;
+    background-image: url('/images/pat.jpg');
+}
+
+.menu-div{
+    padding: 0;
+    margin-top: 0;
+    height: auto;
+}
+
+.left-panel{
+    border: 2px solid greenyellow;
+    width: 20%;
+    height: 700px;
+    float: left;
+    position: absolute;
+    z-index: -2;
+
+}
+
+.section-main{
+    border: 2px dotted black;
+    height: 700px;
+    padding: 2px;
+    z-index: -2;
+    background-image: url('/images/temp.jpg');
+    background-size: contain;
+}
+
+.menu-body{
+    border: 2px solid cornflowerblue;
+    margin-left: 20.5%;
+    height: 94%;
+    overflow-y: scroll;
+    padding: 1%;
+    background-image: url('/images/alph.jpg');
+    background-size: contain;
+}
+
+.menu-buttons{
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.fleet-view-table-header{
+    font-size: 1.4em;
+}
+
+
+#navMenu{
+    margin-top: 0;
+    height:100px;
+    background-image: url('/images/sup.jpg');
+    background-color: antiquewhite;
+    padding: 0;
+}
