@@ -27,30 +27,6 @@ angular.module('myApp.menu',['ngRoute'])
           rootScope.showLogOutButton = true;
         }
 
-        var sql = require('mssql');
-
-        var dbConfig = {
-            user: 'sphero@spheroes',
-            password: '123Azure',
-            server:'spheroes.database.windows.net',
-            database:'AZUREHERODB',
-            options: {
-                encrypt: true
-            }
-        };
-
-        var connection = new sql.Connection(dbConfig, function(err){
-
-            var request = new sql.Request(connection);
-            request.execute('dbo.getAllUsers', function(err, recordsets, returnValue) {
-                // ... error checks
-
-                console.dir(recordsets);
-                console.log(returnValue);
-            });
-
-        });
-
         //---------Initialize variables--------------------
         var menu = scope;
         menu.showLoadingBar = false;
