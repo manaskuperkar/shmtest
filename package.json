@@ -35,6 +35,7 @@
     "angular-aria": "^1.5.8",
     "angular-material": "^1.1.1",
     "bower": "^1.7.9",
+    "http-server": "^0.9.0",
     "mssql": "^3.3.0"
   }
 }
